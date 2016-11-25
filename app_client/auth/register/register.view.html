@@ -1,0 +1,26 @@
+<navigation></navigation>
+
+<div class="container">
+
+
+<section id="newaccount">
+       <div>
+           <h3>Crear cuenta</h3>
+           <p>¿Ya tienes cuenta? <a href="login">Inicia sesión aquí</a></p>
+           <form ng-submit="vm.onSubmit()">
+           <div class="form-group">
+           <p><input type="text" class="form-control" id="name" name="name" placeholder="Nombre Completo" ng-model="vm.credentials.name"/></p>
+           </div>
+           <div class="form-group">
+           <p><input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" ng-model="vm.credentials.email"/></p>
+           </div>
+           <div class="form-group">
+           <p><input type="password" class="form-control" id="password" name="contraseña" placeholder="Contraseña" ng-model="vm.credentials.password"/></p>
+           </div>
+           <p><button type="submit">Crear cuenta</button></p>
+           </form>
+       </div>
+</section>
+
+ 
+</div>

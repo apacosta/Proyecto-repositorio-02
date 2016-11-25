@@ -1,0 +1,17 @@
+
+<header>
+<div id = "logo">
+        <h1><a href="/">MyGame</a></h1>
+      </div>
+      <div id= "headeractions">
+       <a href="upload.html" class="button">Subir Juego</a>
+       <input type="text" name="buscar" placeholder="Buscar"/>
+      </div>
+      <div id="barra1">
+       <p class="categories">Juegos Nuevos</p>
+       
+       <p class="login" ng-hide="navvm.isLoggedIn"><a href="login">Iniciar Sesión</a>/<a href="register">Crear Cuenta</a></p>
+	
+       <p class="login" ng-show="navvm.isLoggedIn"><a href="profile">{{ navvm.currentUser.name }}</a></p>
+</div>
+</header>
